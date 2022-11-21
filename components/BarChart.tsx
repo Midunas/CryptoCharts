@@ -86,7 +86,7 @@ const BarChart: React.FC<BarChartProps> = ({ data }) => {
 
   return (
     <div className='mt-12'>
-      <div className=' text-3xl mb-8 justify-end flex'>
+      <div className=' text-3xl -mt-4 justify-end flex'>
         <Link href='/PriceGraph' className='cursor-pointer hover:bg-zinc-700 hover:text-orange-200 p-4 rounded'>Price Graph
         </Link>
       </div>
