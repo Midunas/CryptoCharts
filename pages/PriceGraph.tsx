@@ -29,6 +29,7 @@ ChartJS.register(
 const PriceGraph: NextPage = (props: any) => {
 
   //TODO: Make many selections possible, to compare data. 
+  //TODO: Fetch crypto news on selected crypto coin?
 
   const selectRef = useRef<HTMLSelectElement>(null);
   const [cryptos, setCryptos] = useState<Crypto | null>(null);
