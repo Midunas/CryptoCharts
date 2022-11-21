@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-zinc-800;
+}
+
+.container {
+  @apply max-w-[1280px] flex flex-wrap justify-around m-auto mt-12 items-center
+}
