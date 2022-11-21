@@ -4,7 +4,7 @@ import DoughnutChart from "../components/DoughnutChart";
 import NavBar from "../components/NavBar";
 
 interface HomeProps {
-  //Todo: apsirašyk
+  //TODO: write them up
 }
 
 const Home = (props: any) => {
