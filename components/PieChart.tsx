@@ -24,9 +24,6 @@ const PieChart: React.FC<BarChartProps> = ({ data }) => {
   const cryptoArray = data?.data
   const only5Array = cryptoArray?.slice(0, 10)
 
-  console.log(only5Array)
-
-
   const info = {
     labels: only5Array?.map((x: CryptoObject) => x.name),
     datasets: [
