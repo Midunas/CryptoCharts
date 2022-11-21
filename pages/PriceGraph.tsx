@@ -26,7 +26,6 @@ ChartJS.register(
   Legend
 );
 
-
 const PriceGraph: NextPage = (props: any) => {
 
   const selectRef = useRef<HTMLSelectElement>(null);

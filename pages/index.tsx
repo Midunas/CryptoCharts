@@ -31,12 +31,10 @@ export const getServerSideProps = async () => {
       'X-CMC_PRO_API_KEY': process.env['API_KEY'] || ''
     }
   })
-
-  const latestPrices = await res.json();
-
+  const data = await res.json();
   return {
     props: {
-      data: latestPrices,
+      data: data,
     },
   };
 
