@@ -17,7 +17,7 @@ interface BarChartProps {
 const PieChart: React.FC<BarChartProps> = ({ data }) => {
 
   const cryptoArray = data?.data
-  const only5Array = cryptoArray.slice(0, 10)
+  const only5Array = cryptoArray?.slice(0, 10)
 
   const info = {
     labels: only5Array?.map((x: Crypto) => x.name),
