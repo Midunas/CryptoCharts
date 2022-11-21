@@ -53,7 +53,7 @@ const DoughnutChart: React.FC<BarChartProps> = ({ data }) => {
   };
   return (
     <div className='mt-12'>
-      <h1 className='text-3xl text-white'>Total supply</h1>
+      <h1 className='text-3xl text-white text-center mb-4'>Total supply</h1>
       <Doughnut data={info} height={200} width={400} />
     </div>
   )

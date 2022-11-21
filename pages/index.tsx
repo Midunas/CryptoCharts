@@ -14,7 +14,7 @@ const Home = (props: any) => {
       <NavBar />
       <div className='container text-white'>
         <BarChart data={props.data} />
-        <div className="flex">
+        <div className="flex gap-x-28">
           <PieChart data={props.data} />
           <DoughnutChart data={props.data} />
         </div>

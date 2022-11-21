@@ -52,7 +52,7 @@ const PieChart: React.FC<BarChartProps> = ({ data }) => {
   };
   return (
     <div className='mt-12'>
-      <h1 className='text-3xl text-white'>Volume change 24h</h1>
+      <h1 className='text-3xl text-center text-white mb-4'>Volume change 24h</h1>
       <Pie data={info} height={200} width={400} />
     </div>
   )
