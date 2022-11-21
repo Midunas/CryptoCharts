@@ -1,11 +1,11 @@
-import Image from 'next/image'
+import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react'
+import React from 'react';
 
 const NavBar = () => {
 
   return (
-    <div className='text-white flex h-16 bg-zinc-900 items-center justify-around'>
+    <div className='nav'>
       <Link href='/' className='text-4xl text-white ml-5'>Grypto</Link>
       <div className='flex'>
         <div className='flex gap-x-8 mr-10 items-center'>
@@ -19,12 +19,11 @@ const NavBar = () => {
               width={40}
               height={40}
               className='rounded'
-            ></Image>
+            />
           </a>
         </div>
       </div>
     </div>
-
   )
 }
 

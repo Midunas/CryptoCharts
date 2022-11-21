@@ -10,16 +10,13 @@ interface HomeProps {
 const Home = (props: any) => {
 
   return (
-    <>
-      <NavBar />
-      <div className='container flex flex-col text-white'>
-        <BarChart data={props.data} />
-        <div className="flex gap-x-28">
-          <PieChart data={props.data} />
-          <DoughnutChart data={props.data} />
-        </div>
+    <div className='container flex flex-col text-white'>
+      <BarChart data={props.data} />
+      <div className="flex gap-x-28">
+        <PieChart data={props.data} />
+        <DoughnutChart data={props.data} />
       </div>
-    </>
+    </div>
   )
 }
 

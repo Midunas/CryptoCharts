@@ -97,25 +97,22 @@ const PriceGraph: NextPage = (props: any) => {
 
 
   return (
-    <>
-      <NavBar />
-      <div className='w-[1000px] mx-auto mt-20'>
-        <select
-          className='p-1 rounded text-white bg-zinc-600'
-          ref={selectRef}
-          name='Crypto'
-          onChange={() => setSelected(selectRef.current!.value)}
-        >
-          {cryptoArray?.map((x: Crypto, i: number) => {
-            return <option key={i} value={x.id.toLowerCase()}>{x.id}</option>
-          })
-          }
-        </select>
-        <div>
-          {props ? <Line options={options} data={data} /> : null}
-        </div>
+    <div className='w-[1000px] mx-auto mt-20'>
+      <select
+        className='p-1 rounded text-white bg-zinc-600'
+        ref={selectRef}
+        name='Crypto'
+        onChange={() => setSelected(selectRef.current!.value)}
+      >
+        {cryptoArray?.map((x: Crypto, i: number) => {
+          return <option key={i} value={x.id.toLowerCase()}>{x.id}</option>
+        })
+        }
+      </select>
+      <div>
+        {props ? <Line options={options} data={data} /> : null}
       </div>
-    </>
+    </div>
   )
 }
 

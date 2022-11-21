@@ -9,3 +9,6 @@ body {
 .container {
   @apply max-w-[1280px] flex flex-wrap justify-around m-auto items-center
 }
+.nav{
+  @apply w-full text-white flex h-16 bg-zinc-900 items-center justify-around
+}
