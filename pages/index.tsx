@@ -28,7 +28,7 @@ export const getServerSideProps = async () => {
   const res = await fetch('https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest', {
     method: 'GET',
     headers: {
-      'X_CMC_PRO_API_KEY': process.env['X_CMC_PRO_API_KEY'] || ''
+      'X-CMC_PRO_API_KEY': process.env['API_KEY'] || ''
     }
   })
 

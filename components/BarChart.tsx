@@ -32,8 +32,8 @@ interface CryptoObject {
 
 const BarChart: React.FC<BarChartProps> = ({ data }) => {
 
-  const cryptoArray = data.data
-  const only10Array = cryptoArray?.slice(0, 10)
+  const cryptoArray = data?.data
+  const only10Array = cryptoArray.slice(0, 10)
 
   const info = {
     labels: only10Array?.map((x: CryptoObject) => x.name),
