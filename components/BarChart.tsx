@@ -64,7 +64,7 @@ const BarChart: React.FC<BarChartProps> = ({ data }) => {
         labels: {
           color: "white",
           font: {
-            size: 18
+            size: 28
           }
         }
       }
