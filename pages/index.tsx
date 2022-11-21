@@ -12,7 +12,7 @@ const Home = (props: any) => {
   return (
     <>
       <NavBar />
-      <div className='container text-white'>
+      <div className='container flex flex-col text-white'>
         <BarChart data={props.data} />
         <div className="flex gap-x-28">
           <PieChart data={props.data} />

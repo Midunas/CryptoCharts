@@ -6,6 +6,7 @@ import {
   Legend,
   ArcElement,
 } from 'chart.js';
+import { Crypto } from '../types/crypto';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -13,23 +14,17 @@ interface BarChartProps {
   [key: string]: any;
 }
 
-interface CryptoObject {
-  name: string,
-  quote: any,
-}
-
-
 const PieChart: React.FC<BarChartProps> = ({ data }) => {
 
   const cryptoArray = data?.data
   const only5Array = cryptoArray?.slice(0, 10)
 
   const info = {
-    labels: only5Array?.map((x: CryptoObject) => x.name),
+    labels: only5Array?.map((x: Crypto) => x.name),
     datasets: [
       {
         label: '# of Votes',
-        data: only5Array?.map((x: CryptoObject) => x.quote['USD'].volume_change_24h),
+        data: only5Array?.map((x: Crypto) => x.quote['USD'].volume_change_24h),
         backgroundColor: [
           'rgba(255, 99, 132, 0.6)',
           'rgba(54, 162, 235, 0.6)',

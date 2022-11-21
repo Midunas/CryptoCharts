@@ -9,6 +9,7 @@ import {
   Tooltip,
   Legend,
 } from 'chart.js';
+import Link from 'next/link';
 
 ChartJS.register(
   CategoryScale,
@@ -18,6 +19,7 @@ ChartJS.register(
   Tooltip,
   Legend
 );
+
 
 interface BarChartProps {
   [key: string]: any;
@@ -84,7 +86,10 @@ const BarChart: React.FC<BarChartProps> = ({ data }) => {
 
   return (
     <div className='mt-12'>
-      <h1 className='text-3xl mb-8'>Market Cap</h1>
+      <div className=' text-3xl mb-8 justify-between flex'>
+        <h1>Market Cap</h1>
+        <Link href='/PriceGraph' className='cursor-pointer'>Price Graph</Link>
+      </div>
       <Bar
         data={info}
         options={options}
