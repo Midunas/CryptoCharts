@@ -28,6 +28,8 @@ ChartJS.register(
 
 const PriceGraph: NextPage = (props: any) => {
 
+  //TODO: Make many selections possible, to compare data. 
+
   const selectRef = useRef<HTMLSelectElement>(null);
   const [cryptos, setCryptos] = useState<Crypto | null>(null);
   const [selected, setSelected] = useState<any | null>('bitcoin');

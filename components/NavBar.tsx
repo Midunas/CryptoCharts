@@ -5,7 +5,7 @@ import React from 'react'
 const NavBar = () => {
 
   return (
-    <div className='text-white flex h-16 bg-zinc-900 items-center justify-between'>
+    <div className='text-white flex h-16 bg-zinc-900 w-5/5 items-center justify-between'>
       <Link href='/' className='text-4xl text-white ml-5'>Crypto</Link>
       <div className='flex'>
         <div className='flex gap-x-8 mr-10 items-center'>
@@ -14,23 +14,10 @@ const NavBar = () => {
             rel='noopener noreferrer'
           >
             <Image
-              src='/binance.jpg'
+              src='/BNC.png'
               alt='binance'
-              width={60}
-              height={60}
-              className='rounded'
-            ></Image>
-          </a>
-          <a
-            href='https://www.etoro.com/'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <Image
-              src='/etoro.png'
-              alt='capital'
-              width={45}
-              height={50}
+              width={40}
+              height={40}
               className='rounded'
             ></Image>
           </a>
