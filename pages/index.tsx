@@ -1,13 +1,13 @@
 import BarChart from "../components/BarChart";
 import PieChart from '../components/PieChart'
 import DoughnutChart from "../components/DoughnutChart";
-import NavBar from "../components/NavBar";
+import { Crypto } from '../types/crypto'
 
 interface HomeProps {
-  //TODO: write them up
+  data: Crypto[],
 }
 
-const Home = (props: any) => {
+const Home: React.FC<HomeProps> = (props) => {
 
   return (
     <div className='container flex flex-col text-white'>

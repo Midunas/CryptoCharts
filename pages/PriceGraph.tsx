@@ -14,7 +14,6 @@ import { Line } from 'react-chartjs-2';
 import type { ChartData, ChartOptions } from 'chart.js';
 import { Crypto } from '../types/crypto';
 import moment from 'moment';
-import NavBar from '../components/NavBar';
 
 ChartJS.register(
   CategoryScale,
@@ -26,7 +25,11 @@ ChartJS.register(
   Legend
 );
 
-const PriceGraph: NextPage = (props: any) => {
+interface GraphProps {
+  data: Crypto[]
+}
+
+const PriceGraph: NextPage<GraphProps> = (props) => {
 
   //TODO: Make many selections possible, to compare data. 
   //TODO: Fetch crypto news on selected crypto coin?

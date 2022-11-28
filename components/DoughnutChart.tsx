@@ -11,7 +11,9 @@ import { Crypto } from '../types/crypto';
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 interface BarChartProps {
-  [key: string]: any;
+  data: {
+    data: Crypto[]
+  }
 }
 
 const DoughnutChart: React.FC<BarChartProps> = ({ data }) => {
